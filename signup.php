@@ -1,7 +1,9 @@
 <?php
 require 'database.php';
+if (!empty($_SESSION['id'])) {
+    header("Location: home.php");
+}
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,11 +31,16 @@ require 'database.php';
                 <button name='submit' type="submit" id="submitbtn" formaction='signupsuccess.php'>Sign Up</button>
             </form>
             <button id="cancelbtn" onclick="goHome()">Cancel</button>
+            <button id="loginbtn" onclick="goLogin()">Login</button>
         </div>
     </body>
     <script>
         function goHome() {
-            location.href = "index.php";
+            window.location.href = 'index.php';
+        }
+
+        function goLogin() {
+            window.location.href = 'login.php';
         }
     </script>
 </html>

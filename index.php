@@ -1,3 +1,9 @@
+<?php
+require 'database.php';
+if (!empty($_SESSION['id'])) {
+    header("Location: home.php");
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,10 +18,10 @@
             <div id="introText">The next generation of fitness.</div>
             <div id="infocontainer">
                 <a href="login.php">
-                   <button type="submit" id="loginBtn">Login</button>
+                    <button type="submit" id="loginBtn">Login</button>
                 </a>
                 <a href="signup.php">
-                   <button type="submit" id="signupBtn">Create an account</button>
+                    <button type="submit" id="signupBtn">Create an account</button>
                 </a>
             </div>
         </div>
