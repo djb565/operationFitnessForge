@@ -42,7 +42,7 @@ body {
     cursor: pointer;
     height: 4vh;
     width: 5vw;
-    margin-left: 7.5em;
+    margin-left: 15em;
 }
 
 #cancelbtn {
@@ -54,7 +54,19 @@ body {
     cursor: pointer;
     height: 4vh;
     width: 5vw;
-    margin-right: 8em;
+    margin-right: 0em;
+}
+
+#loginbtn {
+    text-shadow: .25px .25px .25px #272727;
+    color: #272727;
+    background-color: #FFFB46;
+    position: absolute;
+    margin-top: 16em;
+    cursor: pointer;
+    height: 4vh;
+    width: 5vw;
+    margin-right: 15em;
 }
 
 #containtitle {

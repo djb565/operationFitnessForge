@@ -1,6 +1,9 @@
 <?php
 require 'database.php';
 $conn = getDB();
+if (!empty($_SESSION['id'])) {
+    header("Location: home.php");
+}
 if (isset($_POST['login'])) {
     $usernameemail = $_POST['usernameemail'];
     $password = $_POST['password'];
