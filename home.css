@@ -1,0 +1,63 @@
+body {
+    background-color: #272727;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.not-selectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#logoutbtn {
+    margin-right: 2rem;
+    text-shadow: .25px .25px .25px #272727;
+    color: #272727;
+    background-color: #FFFB46;
+    cursor: pointer;
+    height: 4vh;
+    width: 5vw;
+}
+
+#logoutForm {
+    display: flex;
+    justify-content: right;
+}
+
+#optioncontainer {
+    position: absolute;
+    margin-top: 7%;
+    font-size: 80px;
+}
+
+#createplan {
+    background-color: rgb(30,30,30);
+    height: auto;
+    width: 100vw;
+    margin-top: 2rem;
+}
+
+#deleteplan, #viewplan, #viewtrackprogress {
+    background-color: rgb(30,30,30);
+    height: auto;
+    width: 100vw;
+    margin-top: 2rem;
+}
+
+#createplan:hover {
+    cursor: pointer;
+}
+#deleteplan:hover {
+    cursor: pointer;
+}
+#viewplan:hover {
+    cursor: pointer;
+}
+#viewtrackprogress:hover {
+    cursor: pointer;
+}
